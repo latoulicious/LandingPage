@@ -9,6 +9,6 @@
 
 ## Credits
 
-[Nouridio](https://github.com/Nouridio) For the Template
-[Jiwmeister](https://github.com/Jiwmeister) For Adding SCSS
-[マルジェ](https://github.com/Adivaprayoga) For Improving the landing page
+* [Nouridio](https://github.com/Nouridio) For the Template
+* [Jiwmeister](https://github.com/Jiwmeister) For Adding SCSS
+* [マルジェ](https://github.com/Adivaprayoga) For Improving the landing page
