@@ -1,320 +1,364 @@
 .heading {
-    position: relative;
-    height: 100vh;
-    margin-bottom: -1px;
-    padding: 50px;
-  
-    &::before {
-      content: "";
-      position: absolute;
-      background-image: url("../assets/wavy-purple-by-nouridio.svg");
-      background-position: bottom;
-      background-size: 300%;
-      background-repeat: no-repeat;
-      width: 100%;
-      height: 100%;
-      bottom: 0;
-      left: 0;
-    }
+  position: relative;
+  height: 100vh;
+  margin-bottom: -1px;
+  padding: 50px;
 
-    &__content{
-        position: absolute;
-        top: 150px;
-
-        .title-header{
-            max-width: 750px;
-            line-height: 4rem;
-            font-size: 3.5rem;
-            font-weight: 600;
-        }
-        .subtitle-header{
-            font-size: 1.2rem;
-            font-weight: 300;
-            line-height: 2rem;
-            padding-top: 25px;
-            padding-bottom: 25px;
-        }
-        .button-header-wrap{
-            display: flex;
-
-            .button-header{
-                background: $primary;
-                color: $white;
-                padding: 15px 60px;
-                border: 2px solid $primary;
-                border-radius: 10px;
-                font-weight: bold;
-                text-decoration: none;
-                margin-right: 15px;
-                transition: all 0.3s ease-in-out;
-            
-                &:hover{
-                    transform: translatey(-5px);
-                }
-            }
-            .button-header-secondary{
-                background: $black;
-                color: $primary;
-                padding: 15px 60px;
-                border: 2px solid $primary;
-                border-radius: 10px;
-                font-weight: bold;
-                text-decoration: none;
-                transition: all 0.3s ease-in-out;
-            }
-        }
-    }
-  }
-  
-  .features {
-    text-align: center;
-    background: #ad91ff;
-    background-image: url("../assets/wavy-dark-by-nouridio.svg");
+  &::before {
+    content: "";
+    position: absolute;
+    background-image: url("../assets/wavy-purple-by-nouridio.svg");
     background-position: bottom;
-    background-size: 200%;
+    background-size: 300%;
     background-repeat: no-repeat;
-    padding-bottom: 300px;
-  
-    .title-feature {
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    left: 0;
+  }
+
+  &__content {
+    position: absolute;
+    top: 150px;
+
+    .title-header {
+      max-width: 750px;
+      line-height: 4rem;
       font-size: 3.5rem;
       font-weight: 600;
     }
-  
-    .subtitle-feature {
-      font-size: 1.5rem;
+    .subtitle-header {
+      font-size: 1.2rem;
       font-weight: 300;
-      letter-spacing: 1.2px;
+      line-height: 2rem;
+      padding-top: 25px;
+      padding-bottom: 25px;
     }
-  
-    .card {
-      background: #1d1e28;
-      border-radius: 22px;
-      border: 4px solid #ad91ff;
-      margin-top: 35px;
-    }
-  
-    .card-body {
-      text-align: left;
-      padding: 40px 65px;
-    }
-  
-    .card-title {
-      margin-bottom: 15px;
-    }
-  
-    .card-text {
-      line-height: 35px;
-      font-weight: 300;
-    }
-  }
-  
-  .cards {
-    margin-top: 30px;
-  }
-  
-  .card {
-    border-radius: 5px;
-    box-shadow: none;
-  
-    &.statistic {
-      background: transparent;
-      box-shadow: none;
-      color: #f7f7f7;
-    }
-  }
-  
-  .card-title {
-    font-size: 28px;
-    font-weight: 600;
-    color: #ad91ff;
-  }
-  
-  .statistics {
-    text-align: center;
-    padding-top: 300px;
-  
-    .card-body {
-      padding: 0;
-      height: 280;
-      width: 332;
-      max-height: 280;
-      max-width: 332;
-    }
-  
-    .card-title {
-      font-size: 50px;
-      font-weight: 600;
-      margin-bottom: 0;
-    }
-  
-    .title {
-      font-size: 40px;
-      color: #ffffff;
-      line-height: 70px;
-    }
-  
-    .subtitle {
-      font-size: 20px;
-      color: #a2a8bd;
-    }
-  }
-  
-  .page_end {
-    background-image: url("../assets/wavy-light-by-nouridio.svg");
-    background-position: bottom;
-    background-size: 200%;
-    background-repeat: no-repeat;
-  }
-  .start {
-    padding: 60px 50px;
-  
-    .card {
-      background: transparent;
-      color: #f6f9ff;
-    }
-  }
-  
-  .navbar-toggler-icon {
-    color: #fff;
-  }
-  
-  .footer {
-    text-align: center;
-    padding: 5px 6px;
-    color: #ecf2ff;
-    padding: 30px 30px;
-  
-    .nouridio {
-      font-family: "Montserrat";
-      font-style: normal;
-      font-weight: 600;
-      font-size: 16px;
-      line-height: 5px;
-      letter-spacing: 0.15em;
-      font-variant: small-caps;
-  
-      a {
-        color: #ad91ff;
+    .button-header-wrap {
+      display: flex;
+
+      .button-header {
+        background: $primary;
+        color: $white;
+        padding: 15px 60px;
+        border: 2px solid $primary;
+        border-radius: 10px;
+        font-weight: bold;
         text-decoration: none;
+        margin-right: 15px;
+        transition: all 0.3s ease-in-out;
+
+        &:hover {
+          transform: translatey(-5px);
+        }
+      }
+      .button-header-secondary {
+        background: $black;
+        color: $primary;
+        padding: 15px 60px;
+        border: 2px solid $primary;
+        border-radius: 10px;
+        font-weight: bold;
+        text-decoration: none;
+        transition: all 0.3s ease-in-out;
+
+        @include fullState {
+          background-color: $primary;
+          color: $white;
+        }
       }
     }
-  
-    .bot-footer {
-      text-align: center;
-      color: #a2a8bd;
+  }
+}
+
+.features {
+  text-align: center;
+  background: #ad91ff;
+  background-image: url("../assets/wavy-dark-by-nouridio.svg");
+  background-position: bottom;
+  background-size: 200%;
+  background-repeat: no-repeat;
+  padding-bottom: 300px;
+
+  .title-feature {
+    font-size: 3.5rem;
+    font-weight: 600;
+  }
+
+  .subtitle-feature {
+    font-size: 1.5rem;
+    font-weight: 300;
+    letter-spacing: 1.2px;
+  }
+
+  .card {
+    background: #1d1e28;
+    border-radius: 22px;
+    border: 4px solid #ad91ff;
+    margin-top: 35px;
+  }
+
+  .card-body {
+    text-align: left;
+    padding: 40px 65px;
+  }
+
+  .card-title {
+    margin-bottom: 15px;
+  }
+
+  .card-text {
+    line-height: 35px;
+    font-weight: 300;
+  }
+}
+
+.cards {
+  margin-top: 30px;
+}
+
+.card {
+  border-radius: 5px;
+  box-shadow: none;
+
+  &.statistic {
+    background: transparent;
+    box-shadow: none;
+    color: #f7f7f7;
+  }
+}
+
+.card-title {
+  font-size: 28px;
+  font-weight: 600;
+  color: #ad91ff;
+}
+
+.statistics {
+  text-align: center;
+  padding-top: 300px;
+
+  .card {
+    border: 0;
+  }
+
+  .card-body {
+    padding: 0;
+    height: 280;
+    width: 332;
+    max-height: 280;
+    max-width: 332;
+  }
+
+  .card-title {
+    font-size: 50px;
+    font-weight: 600;
+    margin-bottom: 0;
+  }
+
+  .title {
+    font-size: 40px;
+    color: #ffffff;
+    line-height: 70px;
+  }
+
+  .subtitle {
+    font-size: 20px;
+    color: #a2a8bd;
+  }
+}
+
+.page_end {
+  background-image: url("../assets/wavy-light-by-nouridio.svg");
+  background-position: bottom;
+  background-size: 200%;
+  background-repeat: no-repeat;
+}
+.start {
+  padding: 60px 50px;
+
+  .card {
+    background: transparent;
+    border: 0;
+    color: #f6f9ff;
+  }
+}
+
+.navbar-toggler-icon {
+  color: #fff;
+}
+
+.footer {
+  text-align: center;
+  padding: 5px 6px;
+  color: #ecf2ff;
+  padding: 30px 30px;
+
+  .nouridio {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 5px;
+    letter-spacing: 0.15em;
+    font-variant: small-caps;
+
+    a {
+      color: #ad91ff;
+      text-decoration: none;
     }
   }
 
+  .nav-link {
+    @include fullState {
+      color: $primary;
+    }
+  }
+
+  .bot-footer {
+    text-align: center;
+    color: #a2a8bd;
+  }
+}
 
 // Adiva
 .navbar {
-    position: fixed;
-    width: 100%;
-    top: 0;
-    transition: all 0.3s ease;
-    padding: 15px 25px;
-    z-index: 1;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  transition: all 0.3s ease;
+  padding: 0 25px;
+  z-index: 1;
 
-    &.scrolled{
-        background: $white;
-        box-shadow: 1px 5px 5px 0px rgba(0, 0, 0, 0.1);
-
-        .button-navbar{
-            color: $black;
-            border: 3px solid $black;
-        }
-
-        .nav-item a{
-            color: $black;
-        }
-        
-    }
+  .nav-link {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin: 0;
   }
 
-.button-navbar{
+  &.scrolled {
     background: $white;
-    color: $primary;
-    padding: 10px 50px;
-    border: 3px solid $primary;
-    border-radius: 10px;
-    font-weight: bold;
-    text-decoration: none;
-    transition: all 0.3s ease-in-out;
+    box-shadow: 1px 5px 5px 0px rgba(0, 0, 0, 0.1);
 
-    &:hover{
-        transform: translateX(-5px);
+    .button-navbar {
+      color: $black;
+      border: 3px solid $black;
+      
+      @include fullState {
+        color: $primary;
+        border-color: $primary;
+      }
     }
+
+    .nav-item .nav-link {
+      color: $black;
+
+      @include fullState {
+        color: $primary;
+      }
+    }
+  }
 }
 
-.back-to-top{
-    position: fixed;
-    right: 5rem;
-    bottom: 5rem;
-    transition: background-color 0.3s, opacity 0.5s, visibility 0.5s;
+.button-navbar {
+  background: $white;
+  color: $primary;
+  padding: 10px 50px;
+  border: 3px solid $primary;
+  border-radius: 10px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    transform: translateX(-5px);
+  }
+}
+
+.back-to-top {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  right: 10px;
+  bottom: 10px;
+  transition: background-color 0.3s, opacity 0.5s, visibility 0.5s;
+  opacity: 0;
+  visibility: hidden;
+
+  p {
+    margin-bottom: 0;
     opacity: 0;
-    visibility: hidden;
+    transition: all .3s ease;
+  }
 
-    &:hover{
-        cursor: pointer;
-    }
-    
-    img{
-        height: 150px;
+  img {
+    height: 150px;
+    transition: all .3s ease;
+  }
+
+  &.show {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  &:hover {
+    cursor: pointer;
+
+    img {
+      transform: translateY(-10px);
     }
 
-    &.show{
-        opacity: 1;
-        visibility: visible;
+    p {
+      opacity: 1;
     }
+  }
 }
 
-.nav-item a{
-    position: relative;
-    display: inline-block;
-    color: $white;
-    font-weight: 500;
-    transition: all 0.3s ease-in-out;
-    margin: 5px;
+.nav-item .nav-link {
+  position: relative;
+  display: inline-block;
+  color: $white;
+  font-weight: 500;
+  transition: all 0.3s ease-in-out;
+  margin: 0 5px;
 
-    &:hover{
-        color: $white;
-    }
+  // &:hover {
+  //   color: $white;
+  // }
 }
 
-a.effect-underline:after {
-  content: '';
+.nav-link.effect-underline:after {
+  content: "";
   position: absolute;
   left: 0;
-  display: inline-block;
-  height: 1em;
+  bottom: 0;
+  height: 3px;
   width: 100%;
-  border-bottom: 1px solid $black;
-  margin-top: 10px;
+  border-bottom: solid $primary;
   opacity: 0;
   transition: opacity 0.35s, transform 0.35s;
-  transform: scale(0,1);
+  transform: scale(0, 1);
 }
 
-a.effect-underline:hover:after {
+.nav-link.effect-underline:hover:after {
   opacity: 1;
   transform: scale(1);
 }
 
-.card-wrap-right{
-    animation-name: bounce;
-    animation-duration: 3s;
-    animation-iteration-count: infinite;
+.card-wrap-right {
+  animation-name: bounce;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
 }
 
-.card-wrap-center{
-    animation-name: bounce;
-    animation-duration: 5s;
-    animation-iteration-count: infinite;
+.card-wrap-center {
+  animation-name: bounce;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
 }
 
-.card-wrap-left{
-    animation-name: bounce;
-    animation-duration: 7s;
-    animation-iteration-count: infinite;
+.card-wrap-left {
+  animation-name: bounce;
+  animation-duration: 7s;
+  animation-iteration-count: infinite;
 }
-  

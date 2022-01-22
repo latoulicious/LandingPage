@@ -16,16 +16,22 @@
 }
 
 @mixin keyframes($name) {
-    @-webkit-keyframes #{$name} {
-      @content;
-    }
-    @-moz-keyframes #{$name} {
-      @content;
-    }
-    @-ms-keyframes #{$name} {
-      @content;
-    }
-    @keyframes #{$name} {
-      @content;
-    }
+  @-webkit-keyframes #{$name} {
+    @content;
   }
+  @-moz-keyframes #{$name} {
+    @content;
+  }
+  @-ms-keyframes #{$name} {
+    @content;
+  }
+  @keyframes #{$name} {
+    @content;
+  }
+}
+
+@mixin fullState {
+  &:hover, &:active, &:focus, &:active:hover, &:active:focus {
+    @content;
+  }
+}
